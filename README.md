@@ -133,5 +133,89 @@ def main():
 
 if __name__ == "__main__":
     main()
+4️⃣ Add a test message file
+
+Create a file:
+
+messages.txt
+
+Add sample messages:
+
+Alice: Check this link https://bit.ly/fakeapp
+Bob: Hello, how are you?
+Charlie: Download this cool.apk
+Dara: join https://t.me/spamchannel
+
+5️⃣ Run the script
+
+python openice_guardian.py
+---
+📁 Project Structure
+OpenICE/
+├── openice_guardian.py
+├── messages.txt
+├── reports/
+│   ├── suspicious_log_2025-11-11_20-10-55.txt
+│   └── report_2025-11-11_20-10-55.md
+└── README.md
+
+
+---
+
+⚙️ Configuration
+
+To modify suspicious keywords, edit the BLACKLIST list in openice_guardian.py:
+
+BLACKLIST = [
+    "t.me/", ".apk", "porn", "sex", "nude", "bit.ly",
+    "hack", "phishing", "malware", "trojan"
+]
+
+---
+
+🧾 Example Report (Markdown Output)
+
+# 🧊 OpenICE Guardian Report
+**Generated:** 2025-11-11_20-10-55
+
+## ⚠ Suspicious Messages
+- **Alice** → Check this link https://bit.ly/fakeapp
+- **Charlie** → Download this cool.apk
+- **Dara** → join https://t.me/spamchannel
+
+## 🟢 Safe Messages
+- **Bob**: Hello, how are you?
+
+
+---
+
+🧑‍💻 Author
+
+OpenICE Team
+Created and maintained by Cybersecurity Research Developers for open educational research.
+
+
+---
+
+📜 License
+
+This project is licensed under the MIT License — free to use, modify, and distribute with attribution.
+See LICENSE for details.
+
+
+---
+
+💬 Feedback & Issues
+
+If you find a bug or want to request a feature, please open an issue here:
+👉 GitHub Issues
+
+
+---
+
+🔒 Stay Safe — Stay Informed
+
+> OpenICE Guardian helps you learn and defend against digital threats safely.
+Practice ethical cybersecurity, protect your data, and keep your community secure.
 
 
